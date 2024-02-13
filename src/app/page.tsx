@@ -10,7 +10,7 @@ export default function Home() {
 
       var totalNews_H = 0;
       for (var i = 0; i < newsNum; i++) {
-        var news_H = $(".newsTicker li").eq(i).outerHeight(true);
+        var news_H: any = $(".newsTicker li").eq(i).outerHeight(true);
         totalNews_H = totalNews_H + news_H;
       }
 
@@ -18,7 +18,7 @@ export default function Home() {
 
       var speed = 1,
         animAmount,
-        animInterval;
+        animInterval: any;
 
       animateNews();
 
@@ -32,7 +32,7 @@ export default function Home() {
             1,
             function () {
               animAmount = speed;
-              var animNews_H = $(".newsTicker li").eq(0).outerHeight(true);
+              var animNews_H: any = $(".newsTicker li").eq(0).outerHeight(true);
 
               if (animAmount >= animNews_H) {
                 $(this).parent().append($(this));
