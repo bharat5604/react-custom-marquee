@@ -24,7 +24,7 @@ const useNewsTicker = (options: NewsTickerOptions) => {
     $(`.${className}`).css("height", totalNews_H + "px");
 
     let animInterval: number;
-
+    // Animate invoked here
     animateNews();
 
     function animateNews() {
